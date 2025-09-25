@@ -1,9 +1,7 @@
 import { config } from "./config";
 import { initMongoDB } from "./mongo";
-import { initRedis } from "./redis";
 
 export * from "./config";
-export * from "./redis";
 export * from "./mongo";
 export * from "./express";
 
@@ -12,9 +10,6 @@ import { server, loadExpressMiddleware } from "./express";
 export const init = async () => {
   // Open mongodb connection pool
   await initMongoDB();
-
-  // Connect to redis cache
-  await initRedis();
 
   // Attach all express middlewares
   loadExpressMiddleware();
