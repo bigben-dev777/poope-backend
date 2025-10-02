@@ -10,6 +10,7 @@
     "build": "rm -rf dist && npx tsc"
   },
   "dependencies": {
+    "@types/passport-jwt": "^4.0.1",
     "compression": "^1.7.5",
     "cors": "^2.8.5",
     "cron": "^3.2.1",
@@ -18,13 +19,21 @@
     "ethers": "^6.13.4",
     "express": "^4.21.1",
     "helmet": "^8.0.0",
-    "mongoose": "^8.8.3"
+    "mongoose": "^8.8.3",
+    "morgan": "^1.10.1",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.1",
+    "socket.io": "^4.8.1",
+    "winston": "^3.18.3"
   },
   "devDependencies": {
     "@types/compression": "^1.7.5",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
+    "@types/morgan": "^1.9.10",
     "@types/node": "^22.10.1",
+    "@types/passport-google-oauth20": "^2.0.16",
     "@typescript-eslint/eslint-plugin": "^8.17.0",
     "@typescript-eslint/parser": "^8.17.0",
     "eslint": "^8.57.1",
